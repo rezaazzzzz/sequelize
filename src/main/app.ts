@@ -9,7 +9,7 @@ import {Sequelize} from "sequelize";
 const sequelize = new Sequelize({
     dialect:"sqlite",
     storage:"./database.sqlite",
-    logging:true,
+    logging: true
     
 })
 
@@ -30,6 +30,10 @@ app.get("/",(req,res)=>{
     console.log(req)
 res.send("hello world")
 })
+
+
+
+
 
 app.post("/create",(req,res)=>{
 //  const {name,email,password} = req.body();
